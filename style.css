@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Roboto", "sans-serif";
+}
+
+/* Header styles */
+header {
+    background-image: url('images/Banner\ Image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* Fill the entire header */
+    width: 65vw;
+    height: 55vh;
+    margin: 80px auto;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* Ensure the overlay positions correctly */
+    overflow: hidden;
+    /* Prevent overflow of the background */
+}
+
+/* Add an overlay to darken the background */
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Black with 50% opacity */
+    border-radius: 20px;
+    /* Match the border radius */
+    z-index: 1;
+    /* Place it behind the content */
+}
+
+.new-year-greeting,
+.new-year-celebration {
+    position: relative;
+    z-index: 2;
+    /* Ensure text is above the overlay */
+}
+
+.new-year-greeting {
+    font-size: 40px;
+    margin: 5px;
+    color: white;
+}
+
+.new-year-celebration {
+    margin: 5px;
+    font-size: 90px;
+    font-weight: 900;
+    color: white;
+}
+
+/* Main styles */
+
+.catagory{
+    text-align: center;
+    margin: 0 auto;
+    width: 50vw;
+    /* background-color: aqua; */
+
+}
+.catagory  h1{
+    color: red;
+    font-size: 100px;
+    font-weight: 900;
+}
+.catagory p{
+    color: red;
+    font-size: 30px;
+    font-weight: 400;
+
+}
+.catagory h2{
+    color: #070211;
+    font-size: 50px;
+}
+.party{
+    background-image: url('images/Vectorrr.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 65vw;
+    height: 55vh;
+    margin: 80px auto;
+    margin-bottom: 0;
+    border: none;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+.party::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.midnight-welcome{
+    width: 50%;
+}
+.party-description{
+    /* width: 25%; */
+    color: rgb(237, 225, 225);
+    font-size: 25px;
+    position: relative;
+    z-index: 2;
+}
+.year img{
+    z-index: 2000;
+    position: relative;   
+}
+.schedule{
+    /* background-color: red; */
+    background: linear-gradient(to bottom, rgb(250, 182, 182), #fcf2f2);
+    width: 65vw;
+    height: 45vh;
+    margin: 150px auto;
+    /* margin-bottom: 0; */
+    border: none;
+    border-radius: 20px;
+    box-shadow: 2px 2px 50px rgb(126, 116, 116);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.schedule p{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 8px;
+
+}
+.schedule span{
+    color: red;
+}
+.btn-primary{
+    margin-top: 25px;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+
+}
+.offers{
+    width: 65vw;
+    height: 45vh;
+    margin: 150px auto;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.incoming-offer{
+    width: 30%;
+}
+.best-incoming-offer{
+    color: red;
+    font-size: 30px;
+    font-weight: 400;
+}
+.incoming-offer h2{
+    color: #070211;
+    font-size: 50px;
+
+}
+.incoming-offer-description{
+    font-size: 25px;
+    color: grey;
+}
+.celebration-pic{
+    margin: 50px;
+    border-radius: 50%;
+    padding: 50px;
+    border: 18px solid red;
+}
+.year-logo{
+    width: 20%;
+  margin: 50px;
+}
+.year-red{
+    color: red;
+    font-size: 55px;
+
+}
+.holiday-sale{
+    width: 65vw;
+    margin: 150px auto;
+    border: none;
+    text-align: center;
+}
+.functional{
+    color: #070211;
+    font-size: 30px;
+}
+.fitty-percent-sale{
+    font-size: 70px;
+    font-weight: 900;
+}
