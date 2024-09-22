@@ -222,3 +222,106 @@ header::before {
     font-size: 70px;
     font-weight: 900;
 }
+.position-images{
+    width: 65vw;
+    height: 56vh;
+    /* background-color: rgb(190, 87, 87); */
+    background-image: url('images/Rectangle\ 2.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    margin: 150px auto;
+    border: none;
+    /* display: flex; */
+    position: relative;
+    border-radius: 25px;
+}
+.position-images .shopping-girl{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 29%;
+    height: auto;
+}
+.discount-pic{
+    position: absolute;
+    top: 12%;
+    right: 20%;
+}
+.gift-box{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+.portfolio-gifts{
+    width: 65vw;
+    margin: 150px auto;
+}
+.gift-title{
+    font-size: 30px;
+    color: red;
+}
+.awesome-portfolio{
+    font-size: 55px;
+}
+.gift-items{
+    width: 65vw;
+    margin: 150px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px;
+}
+.item{
+    width: 32.8%;
+    margin: 0;
+}
+.subscribe{
+    width: 65vw;
+    height: 56vh;
+    margin: 150px auto;
+    text-align: center;
+    background-color: skyblue;
+    border-radius: 20px;
+
+
+}
+.subscribe img{
+    margin-top: 80px;
+}
+.email-section{
+    width: 45%;
+    height: 75px;
+    background-color: red;
+    margin: 0 auto;
+    margin-top: 70px;
+    border: none;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+}
+.email{
+    width: 70%;
+    height: 100%;
+    margin: 0;
+    border: none;
+    background-color: white;
+    padding-left: 40px;
+    font-size: 20px;
+    border-top-left-radius:35px ;
+    border-bottom-left-radius: 35px;
+    outline: none;
+}
+.submit-btn{
+    width: 30%;
+    height: 100%;
+    margin: 0;
+    border: none;
+    border-top-right-radius:35px ;
+    border-bottom-right-radius: 35px;
+    background-color: blue;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
