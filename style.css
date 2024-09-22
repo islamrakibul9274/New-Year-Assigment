@@ -2,6 +2,7 @@
 
 * {
     font-family: "Roboto", "sans-serif";
+    margin: 0;
 }
 
 /* Header styles */
@@ -166,6 +167,10 @@ header::before {
     font-size: 25px;
 
 }
+.btn-primary:hover{
+    cursor: pointer;
+    filter: brightness(60%);
+}
 .offers{
     width: 65vw;
     height: 45vh;
@@ -277,6 +282,10 @@ header::before {
     width: 32.8%;
     margin: 0;
 }
+.item:hover{
+    filter: brightness(50%);
+    cursor: pointer;
+}
 .subscribe{
     width: 65vw;
     height: 56vh;
@@ -324,4 +333,35 @@ header::before {
     color: white;
     font-size: 25px;
     cursor: pointer;
+}
+footer{
+    background-color: black;
+    color: white;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+footer h3{
+    font-size: 28px;
+}
+.footer-section1{
+    width: 64vw;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+hr{
+    width: 65vw;
+    margin: auto;
+}
+.footer-section2{
+    width: 64vw;
+    margin: 20px auto;
+    text-align: center;
+}
+.footer-section2 a{
+    margin: 5px;
 }
