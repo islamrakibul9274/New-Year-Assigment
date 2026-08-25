@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: 13 15 23;
+    --foreground: 245 245 247;
+    --card: 20 23 34;
+    --card-foreground: 245 245 247;
+    --primary: 255 51 102;
+    --primary-foreground: 255 255 255;
+    --gold: 245 158 11;
+    --gold-glow: 251 191 36;
+    --border: 38 42 61;
+  }
+
+  body {
+    background-color: #0b0d14;
+    color: #f3f4f6;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    overflow-x: hidden;
+    min-height: 100vh;
+  }
+}
+
+/* Custom Glassmorphism & Festive glow utilities */
+.glass {
+  background: rgba(18, 22, 36, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(28, 33, 53, 0.6) 0%, rgba(18, 22, 36, 0.8) 100%);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-hover:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 51, 102, 0.4);
+  box-shadow: 0 12px 40px -10px rgba(255, 51, 102, 0.25);
+}
+
+.glow-red {
+  box-shadow: 0 0 35px -5px rgba(255, 51, 102, 0.4);
+}
+
+.glow-gold {
+  box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.4);
+}
+
+.text-glow-red {
+  text-shadow: 0 0 20px rgba(255, 51, 102, 0.6);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 20px rgba(245, 158, 11, 0.6);
+}
+
+.festive-gradient-text {
+  background: linear-gradient(135deg, #ff3366 0%, #ff6b6b 40%, #fbbf24 80%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fde68a 0%, #f59e0b 50%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom animated gradient backgrounds */
+.festive-mesh-bg {
+  background-image: 
+    radial-gradient(at 0% 0%, rgba(255, 51, 102, 0.15) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(245, 158, 11, 0.12) 0px, transparent 50%),
+    radial-gradient(at 50% 50%, rgba(139, 92, 246, 0.08) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(255, 51, 102, 0.12) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, rgba(59, 130, 246, 0.1) 0px, transparent 50%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0d14;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272c3d;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff3366;
+}
